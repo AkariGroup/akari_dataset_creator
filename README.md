@@ -1,0 +1,2 @@
+# akari_dataset_creator
+AKARIで画像認識のデータセット用の画像を撮影するためのレポジトリ
