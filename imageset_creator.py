@@ -22,10 +22,9 @@ def main(args=None) -> None:
     cam_rgb = pipeline.create(dai.node.ColorCamera)
     xout_video = pipeline.create(dai.node.XLinkOut)
 
-    # RGBのカメラ、1080P、解像度1280x720を指定
+    # RGBのカメラ、1080Pを指定
     cam_rgb.setBoardSocket(dai.CameraBoardSocket.RGB)
     cam_rgb.setResolution(dai.ColorCameraProperties.SensorResolution.THE_1080_P)
-    cam_rgb.setVideoSize(1280, 720)
     # ソースとアウトプットを接続
     cam_rgb.video.link(xout_video.input)
 
